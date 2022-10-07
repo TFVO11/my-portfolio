@@ -1,16 +1,16 @@
+import useState, { useRef } from "react";
 import Category from "../UI/Category";
 
 const HeaderBar = () => {
+const [, ] = useState();
+
     const handleClick = () => {
-        
-    }
 
-
-
+    };
 
     return (
         <Wrapper>
-            <Category>Portfolio</Category>
+            <Category onClick={handleClick}>Portfolio</Category>
             <Category>About me</Category>
             <Category>skills</Category>
             <Category>Experience</Category>
