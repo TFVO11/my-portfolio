@@ -1,20 +1,19 @@
 import useState, { useRef } from "react";
 import Category from "../UI/Category";
 
-const HeaderBar = () => {
-const [, ] = useState();
+const HeaderBar = props => {
 
-    const handleClick = () => {
-
-    };
 
     return (
         <Wrapper>
-            <Category onClick={handleClick}>Portfolio</Category>
-            <Category>About me</Category>
-            <Category>skills</Category>
-            <Category>Experience</Category>
-            <Category>Project</Category>
+            <Card>
+                <ul>
+                    <li><a href="javascript:;" data-anchor={props.anchorId.aboutMe}>About Me</a></li>
+                    <li><a href="javascript:;" data-anchor={propsanchorId.experience}>Experience</a></li>
+                    <li><a href="javascript:;" data-anchor={propsanchorId.skill}>Experience</a></li>
+                    <li><a href="javascript:;" data-anchor={propsanchorId.project}>Experience</a></li>
+                </ul>
+            </Card>
         </Wrapper>
     )
 }
